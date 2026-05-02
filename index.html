@@ -1518,6 +1518,22 @@
       transform: none;
 
     }
+    @keyframes jitter {
+  0%,100%{transform:translate(0,0) rotate(0deg)}
+  10%{transform:translate(-2px,1px) rotate(-.5deg)}
+  20%{transform:translate(2px,-1px) rotate(.5deg)}
+  30%{transform:translate(-1px,2px) rotate(-.3deg)}
+  40%{transform:translate(1px,-2px) rotate(.3deg)}
+  50%{transform:translate(-2px,1px) rotate(-.5deg)}
+  60%{transform:translate(2px,1px) rotate(.5deg)}
+  70%{transform:translate(-1px,-1px) rotate(-.3deg)}
+  80%{transform:translate(1px,2px) rotate(.3deg)}
+  90%{transform:translate(-2px,-1px) rotate(-.5deg)}
+}
+.byty{
+  animation:jitter 0.5s infinite;
+  display:inline-grid;
+}
   </style>
 </head>
 
@@ -2124,8 +2140,8 @@
   <a href="https://www.linkedin.com/in/dubec-milan/"
     style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);display:grid;place-items:center;color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;">in</a>
   <a href="https://www.youtube.com/watch?v=OXhjDBOePxA&list=RDOXhjDBOePxA&start_radio=1"
-    class="reveal"
-    style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);display:grid;place-items:center;color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;">BYTY</a>
+  class="byty"
+  style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);place-items:center;color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;">BYTY</a>
   <a href="https://www.instagram.com/dominikaruskova_?igsh=MTgzc29xZms1djI1Yw=="
     style="width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);display:grid;place-items:center;color:rgba(255,255,255,.6);text-decoration:none;font-size:.85rem;">ig</a>
 </div>
